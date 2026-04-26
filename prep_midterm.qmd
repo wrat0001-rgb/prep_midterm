@@ -6,3 +6,22 @@ editor: visual
 
 # tutorial3
 test using git command in terminal
+
+# Tutorial 4: Figures, Tables, and Cross-Referencing
+## Task 1: Working with Figures
+```{r}
+#| label: fig-penguins-scatter
+#| fig-cap: "Body mass vs Flipper length for three penguin species"
+#| warning: false
+
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  theme_minimal()
+```
+@fig-penguins-scatter shows the relationship between Body mass vs Flipper length for three penguin species.
+
+
+
