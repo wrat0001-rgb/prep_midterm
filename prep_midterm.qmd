@@ -4,3 +4,5 @@ format: html
 editor: visual
 ---
 
+# tutorial3
+test using git command in terminal
