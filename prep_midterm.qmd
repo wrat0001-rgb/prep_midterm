@@ -2,6 +2,7 @@
 title: "prep_midterm"
 format: html
 editor: visual
+bibliography: references.bib
 ---
 
 # tutorial3
@@ -38,3 +39,17 @@ penguins |>
 ```
 
 @tbl-penguin-summary shows the statistics summary of Mean body mass of penguins by species and sex.
+
+## Task 3: Section referencing {#sec-task3}
+
+@sec-task3 introduce a section referencing.
+
+## Task 4: Add image
+
+![](https://www.worldatlas.com/r/w2560-q80/upload/a8/1b/ff/nz-01.png)
+
+## Extension: Academic Referencing
+
+*Parenthetical:* The data was originally collected by Gorman et al. [@penguins_data]
+
+*Narrative:* @penguins_data argues that the increase of flipper length can increase the weight of penguins.
