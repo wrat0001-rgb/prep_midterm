@@ -23,5 +23,18 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
 ```
 @fig-penguins-scatter shows the relationship between Body mass vs Flipper length for three penguin species.
 
+## Task 2: Creating Professional Tables
+```{r}
+#| label: tbl-penguin-summary
+#| tbl-cap: "Mean body mass of penguins by species and sex."
 
+library(dplyr)
 
+penguins |>
+  filter(!is.na(sex)) |>
+  group_by(species, sex) |>
+  summarise(mean_mass = mean(body_mass_g)) |>
+  knitr::kable()
+```
+
+@tbl-penguin-summary shows the statistics summary of Mean body mass of penguins by species and sex.
