@@ -9,3 +9,6 @@ This is a section.
 This is a change I made on the feature branch.
 
 This line includes changes from both branches.
+
+# workshop6
+Line 1: Initial test message
