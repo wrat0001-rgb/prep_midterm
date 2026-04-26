@@ -1,0 +1,49 @@
+---
+title: "prep_midterm"
+author: "Waranya Ratirotjanakul"
+date: 27 Apr 2026
+format: html
+editor: visual
+---
+
+# Workshop5 - Quarto Cross-Referencing and .gitignore Workshop
+
+```{r}
+library(ggplot2)
+library(palmerpenguins)
+```
+
+## Part 1: Cross-Referencing in Quarto
+### 1. Referencing Sections
+
+#### Data Cleaning {#sec-cleaning}
+See Section @sec-cleaning for details on how the data was prepared.
+
+### 2. Referencing Figures
+
+```{r}
+#| label: fig-bill
+#| fig-cap: "Bill length vs flipper length"
+
+ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
+    geom_point()
+```
+
+Figure @fig-bill shows the relationship between flipper length and bill length.
+
+### 4. Referencing Tables
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: "Summary statistics of the penguins dataset"
+
+knitr::kable(summary(penguins))
+```
+
+See Table @tbl-summary for summary statistics of the dataset.
+
+## Part 2: Ignoring Files with .gitignore
+
+## 📦 Mini Exercise: Using git stash
+this is a test for stashing1.
+stash testing2
