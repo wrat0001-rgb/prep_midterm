@@ -47,3 +47,7 @@ See Table @tbl-summary for summary statistics of the dataset.
 ## 📦 Mini Exercise: Using git stash
 this is a test for stashing1.
 stash testing2
+
+# Workshop 6 - Git Undo Workshop: `git revert` and `git reset`
+- `git revert`: Undo a commit by creating a new commit that cancels it out
+- `git reset`: Move your branch pointer to a previous commit (⚠️ this can rewrite history!)
