@@ -51,3 +51,5 @@ stash testing2
 # Workshop 6 - Git Undo Workshop: `git revert` and `git reset`
 - `git revert`: Undo a commit by creating a new commit that cancels it out
 - `git reset`: Move your branch pointer to a previous commit (⚠️ this can rewrite history!)
+
+# Tutorial 6 - Forking, Branching, and Rebasing with Quarto
